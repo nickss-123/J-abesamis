@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SECRET:)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Countdown Section (visible before April 1) -->
+  <div id="countdown-container" class="countdown-container">
+    <div class="countdown-card">
+      <h1 class="countdown-title">Counting down to Dad's birthday</h1>
+      <div class="countdown-timer">
+        <div class="countdown-block">
+          <span id="days" class="countdown-number">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-block">
+          <span id="hours" class="countdown-number">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-block">
+          <span id="minutes" class="countdown-number">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-block">
+          <span id="seconds" class="countdown-number">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown-message">The celebration will unlock on April 1st. Stay tuned!</p>
+    </div>
+  </div>
+
+  <!-- Main Birthday Content (hidden until April 1) -->
+  <div id="birthday-content" class="birthday-card" style="display: none;">
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>HAPPY BIRTHDAY, <span class="accent-text">PA</span></h1>
+      <div class="subhead">
+        <i class="fas fa-shield-alt"></i> 
+        A pillar of strength, a heart of gold
+      </div>
+    </div>
+
+
+    <!-- Personal Message from the child -->
+    <div class="message-box">
+      <p>
+        <i class="fas fa-quote-left" style="color: #f8c150; opacity: 0.7; margin-right: 6px;"></i>
+        Thank you for all the lessons, the sacrifices, and the love. You've shown me what it means to be strong, kind, and true. 
+        I'm proud to be your daughter. Here's to celebrating the incredible man you are.
+      </p>
+      <div class="signature">
+        <i class="fas fa-heart"></i> With love, Nicole
+      </div>
+    </div>
+
+
+    <!-- Family Wishes Section (photos + messages) -->
+    <div class="family-section">
+      <h2 class="family-heading"><i class="fas fa-users"></i> Memories Together</h2>
+      <div class="family-grid">
+        <!-- You: replace image src with actual photo of you and dad -->
+        <div class="family-card">
+          <div class="family-photo">
+            <img src="images/1.jpg" alt="PAPA">
+          </div>
+          <div class="family-message">
+            <p></p>
+            <span class="family-name"></span>
+          </div>
+        </div>
+        <!-- Mom -->
+        <div class="family-card">
+          <div class="family-photo">
+            <img src="images/9.jpg" alt="">
+          </div>
+          <div class="family-message">
+            <p></p>
+            <span class="family-name"></span>
+          </div>
+        </div>
+        <!-- Sibling or other family -->
+        <div class="family-card">
+          <div class="family-photo">
+            <img src="images/6.jpg" alt="">
+          </div>
+          <div class="family-message">
+            <p></p>
+            <span class="family-name"></span>
+          </div>
+        </div>
+        <div class="family-card">
+           <div class="family-photo">
+             <img src="images/3.jpg" alt="">
+           </div>
+        <div class="family-message">
+            <p></p>
+            <span class="family-name"></span>
+        </div>
+</div>
+        <div class="family-card">
+           <div class="family-photo">
+              <img src="images/8.jpg" alt="">
+          </div>
+          <div class="family-message">
+              <p></p>
+           <span class="family-name"></span>
+           </div>
+          </div>
+        <!-- Grandparent (if applicable) -->
+        <div class="family-card">
+          <div class="family-photo">
+            <img src="images/5.jpg" alt="">
+          </div>
+          <div class="family-message">
+            <p></p>
+            <span class="family-name"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Celebration Button -->
+    <div class="action-area">
+      <button class="btn-gold" id="celebrateBtn">
+        <i class="fas fa-champagne-glasses"></i> Paki-pindot po!
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-note">
+      <span><i class="far fa-calendar-alt"></i> April 1, 2026</span>
+      <span class="date"><i class="fas fa-crown"></i> JEFFREY V. ABESAMIS</span>
+    </div>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
